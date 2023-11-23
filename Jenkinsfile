@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Slave'
+        label 'ankush'
         customWorkspace "/mnt/vel-app"
     }
 
