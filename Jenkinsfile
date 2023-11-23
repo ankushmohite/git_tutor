@@ -1,8 +1,7 @@
 pipeline {
-    agent {
-        label 'ankush'
-        customWorkspace "/mnt/vel-app"
-    }
+    agent any
+        customWorkspace '/mnt/vel-app'
+    
 
     stages {
         stage('Build image') {
