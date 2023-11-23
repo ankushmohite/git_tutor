@@ -1,8 +1,5 @@
 pipeline {
     agent any
-        customWorkspace '/mnt/vel-app'
-    
-
     stages {
         stage('Build image') {
             steps {
