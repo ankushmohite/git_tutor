@@ -15,13 +15,13 @@ pipeline {
             
             steps  {
                 
-               git credentialsId: 'git-token', url: 'https://github.com/ankushmohite/fork.git'
+               git credentialsId: 'git-token', url: 'https://github.com/ankushmohite/git_tutor.git'
             }
         }
         
         stage('Build image') {
             steps {
-                  sh'sudo docker build -t my-image .'
+                  sh'docker build -t my-image .'
 
                     
                 
@@ -31,7 +31,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    sh'sudo docker run -d -p 80:80 my-image'
+                    sh'docker run -d -p 80:80 my-image'
                 }
             }
         }
