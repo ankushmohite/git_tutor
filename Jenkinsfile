@@ -5,7 +5,7 @@ pipeline {
       agent {
 		
 		label{
-				label 'slave'
+				label 'built-in'
 				customWorkspace '/mnt/ankush'
 		}
 	}
