@@ -12,7 +12,7 @@ pipeline {
             
             steps  {
                 
-               git credentialsId: 'git-token', url: 'https://github.com/ankushmohite/fork.git'
+               git credentialsId: 'git-token', url: 'https://github.com/ankushmohite/git_tutor.git'
             }
         }
 
